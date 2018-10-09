@@ -4,7 +4,7 @@ This was meant to be [a web app](https://codepen.io/3rdp/pen/RJjqbq), but I'm to
 
 ## How does this work?
 
-### Set up
+### Setup
 
 Clone the repo.
 
@@ -18,7 +18,7 @@ Change directory.
 cd time-calculate
 ```
 
-Launch the repl.
+Launch the Node repl.
 
 ```
 node
@@ -35,7 +35,7 @@ Load the module.
 Create a variable. Save the new instance of Time Calculator into it.
 
 ```
-const calc = new TimeCalculator({noticeTheBraces})
+const calc = new TimeCalculator({}) // notice the empty object
 ```
 
 Check how much hours we have added up now. Enter this:
