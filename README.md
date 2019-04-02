@@ -1,59 +1,7 @@
-# Calculate time right in Node REPL
+Adds up time, where "time" is `{ hours : Number, minutes: Number }`. Read tests to see how this can be used programatically. Also try adding up your work hours in the [REPL](https://github.com/3rdp/time-calculate/wiki).
 
-This was meant to be [a web app](https://codepen.io/3rdp/pen/RJjqbq), but I'm too lazy to code click handlers and validate input values. Maybe one day...
+### Alternatives
 
-## How does this work?
-
-### Setup
-
-Clone the repo.
-
-```
-git clone https://github.com/3rdp/time-calculate
-```
-
-Change directory.
-
-```
-cd time-calculate
-```
-
-Launch the Node repl.
-
-```
-node
-```
-
-Load the module.
-
-```
-.load time-calculator.js
-```
-
-### Adding time together
-
-Create a variable. Save the new instance of Time Calculator into it.
-
-```
-const calc = new TimeCalculator({}) // notice the empty object
-```
-
-Check how much hours we have added up now. Enter this:
-
-```
-calc.hours
-```
-
-You'll see 0. Let's add up time you worked on a project during a week.
-
-```
-calc.add({ hours: 5, minutes: 20 })
-```
-
-You'll see this: `> {hours: 5, minutes: 20}` - Time Calculator has its values updated and it returns it to you. Go on, add the rest of the week.
-
-```
-...
-```
-
-You can Arrow Up ↑ to navigate through the history of your entered commands.
+* [raine/tunnit](https://www.npmjs.com/package/tunnit) -- simple time tracking tool that calculates number of hours for a text file (given the text file with time ranges)
+* [substack/clocker](https://www.npmjs.com/package/clocker) -- time tracking right in your command line. pipe the output report to substack/invoicer to generate a fancy `invoice.pdf` file.
+* [csvwolf/time-calculate](https://www.npmjs.com/package/time-calculate) -- manipulate Date objects: add time (`{D: Number, h: Number, m: Number ...}`), subsctract time, get diff time object from two Dates
